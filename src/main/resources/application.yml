@@ -1,0 +1,24 @@
+# 端口号的修改
+server:
+  port: 80
+#设置数据源
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC
+      username: root
+      password: root
+
+
+mybatis-plus:
+  configuration:
+    #开启MP的日志--可以看到sql语句的执行
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 表的前缀--or@TableName()进行实体类名和表名的绑定
+#    log-prefix: tbl_
+
+
+
+test:
+  testValue: "我是爸爸"
